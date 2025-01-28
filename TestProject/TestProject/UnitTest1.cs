@@ -8,9 +8,10 @@ public class UnitTest1
         Assert.True(true);
     }
     [Fact]
-    public void FalseisFalse()
+    public void FalseisFalseAndStringIsEmpty()
     {
         Assert.False(!true);
+        Assert.Empty(new string[0]);
     }
     
 }
